@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>Think2Biz - Somente Nomes</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/jquery.jOrgChart.css"/>
+    <link rel="stylesheet" href="css/custom.css"/>
+    <link href="css/prettify.css" type="text/css" rel="stylesheet" />
+
+    <script type="text/javascript" src="prettify.js"></script>
+    
+    <!-- jQuery includes -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+    
+    <script src="jquery.jOrgChart.js"></script>
+
+    <script>
+    jQuery(document).ready(function() {
+        $("#org").jOrgChart({
+            chartElement : '#chart',
+            dragAndDrop  : true
+        });
+    });
+    </script>
+	<style>
+	.circle {
+	  width: 150px;
+	  height: 150px;
+	  background-size: cover;
+	  background-repeat: no-repeat;
+	  background-position: center center;
+	  -webkit-border-radius: 99em;
+	  -moz-border-radius: 99em;
+	  border-radius: 99em;
+	  box-shadow: 0 3px 2px rgba(0, 0, 0, 1);  
+	}
+	</style>
+	<style type="text/css">
+		#placement-examples div { text-align: center; }
+		#placement-examples input { margin: 10px; padding: 10px; }
+		#placement-examples .east { margin-left: 450px; }
+		#mousefollow-examples div { background-color: #EEE; text-align: center; line-height: 400px; margin: 0 auto; height: 400px; width: 100%; }
+		#mouseon-examples div { background-color: #EEE; text-align: center; width: 400px; padding: 40px; }
+		#events-examples input, #api-examples input { margin: 10px; padding: 10px 30px; }
+	</style>
+	<style type="text/css">
+		a.tip {
+		border-bottom: none;
+		text-decoration: none
+		}
+		a.tip:hover {
+			cursor: help;
+			position: relative
+		}
+		a.tip span {
+			display: none
+		}
+		a.tip:hover span {
+			border: blue 1px solid;
+			corder-radius: 5px;
+			padding: 5px 20px 5px 5px;
+			display: block;
+			z-index: 100;
+			background: url(../images/status-info.png) #f0f0f0 no-repeat 100% 5%;
+			left: 0px;
+			margin: 10px;
+			width: 200px;
+			position: absolute;
+			top: 10px;
+			text-decoration: none;
+			-moz-border-radius: 99px;
+			-webkit-border-radius: 99px;
+			border-radius: 50px;
+			  -moz-box-shadow: 0px 0px 4px #222;
+			  -webkit-box-shadow: 0px 0px 4px #222;
+			  box-shadow: 0px 0px 4px #222;
+			opacity: 0.9;
+			filter: alpha(opacity=90); /* For IE8 and earlier */
+		}
+	</style>
+  </head>
+
+  <body onload="prettyPrint();">
+     <div>
+        <div>
+            <div>
+                <img src="images/logo_site_big.png" id="logo">
+            </div>
+        </div>
+    </div>
+	<div id="geral">	
+    <ul id="org" style="display:none">
+    <li>
+	   <a href="#" class="tip"><div style='position:relative;' >
+			
+				<strong>Jhon Smith</strong><span><p><strong><p>Nome: Jhon Smith</p></strong>
+																			<strong><p>Endereço:</p></strong>
+																			<strong><p>Rua: Tarde Autonoma Rupestre</p></strong>
+																			<strong><p>Bairro: Dias Interminávies Silvestres</p></strong>
+																			<strong><p>Nº: 900</p></strong>
+																			<strong><p>Cidade: Cosmopolitana</p></strong>
+																			<strong><p>Estado: São Paulo</p></strong>
+																			<strong><p>País: Brasil</p></strong>
+																			<strong><p>Lider da Rede</p></strong>
+																			</span>
+		</div></a>
+       <ul>
+         <li id="Rose">
+			<div style='position:relative;'>
+					<a href="#" class="tip"><strong>Rose Tyler</strong><span><p><strong><p>Nome: Rose Tyler</p></strong>
+																			<strong><p>Endereço:</p></strong>
+																			<strong><p>Rua: Tarde Autonoma Rupestre</p></strong>
+																			<strong><p>Bairro: Dias Interminávies Silvestres</p></strong>
+																			<strong><p>Nº: 900</p></strong>
+																			<strong><p>Cidade: Cosmopolitana</p></strong>
+																			<strong><p>Estado: São Paulo</p></strong>
+																			<strong><p>País: Brasil</p></strong>
+																			</span></a>
+				</div>
+				<ul>
+				<li id="Mickey">
+					<div style='position:relative;'>
+					
+						<a href="#" class="tip"><strong>Mickey Smith</strong><span><p><strong><p>Nome: Mickey Smith</p></strong>
+																					<strong><p>Endereço:</p></strong>
+																					<strong><p>Rua: Tarde Autonoma Rupestre</p></strong>
+																					<strong><p>Bairro: Dias Interminávies Silvestres</p></strong>
+																					<strong><p>Nº: 900</p></strong>
+																					<strong><p>Cidade: Cosmopolitana</p></strong>
+																					<strong><p>Estado: São Paulo</p></strong>
+																					<strong><p>País: Brasil</p></strong>
+																					</span></a>
+					</div>
+				</li>
+				<li id="Jack">
+					<div style='position:relative;'>
+					
+						<a href="#" class="tip"><strong>Jack Harckness</strong><span><p><strong><p>Nome: Jack Harckness</p></strong>
+																					<strong><p>Endereço:</p></strong>
+																					<strong><p>Rua: Tarde Autonoma Rupestre</p></strong>
+																					<strong><p>Bairro: Dias Interminávies Silvestres</p></strong>
+																					<strong><p>Nº: 900</p></strong>
+																					<strong><p>Cidade: Cosmopolitana</p></strong>
+																					<strong><p>Estado: São Paulo</p></strong>
+																					<strong><p>País: Brasil</p></strong>
+																					</span></a>
+					</div>
+				</li>
+				</ul>
+		 </li>
+		 <li id="Martha">
+			<div style='position:relative;'>
+				<a href="#" class="tip"><strong>Martha Jhones</strong><span><p><strong><p>Nome: Martha Jhones</p></strong>
+																			<strong><p>Endereço:</p></strong>
+																			<strong><p>Rua: Tarde Autonoma Rupestre</p></strong>
+																			<strong><p>Bairro: Dias Interminávies Silvestres</p></strong>
+																			<strong><p>Nº: 900</p></strong>
+																			<strong><p>Cidade: Cosmopolitana</p></strong>
+																			<strong><p>Estado: São Paulo</p></strong>
+																			<strong><p>País: Brasil</p></strong>
+																			</span></a>
+			</div>
+		 </li>
+		 <li id="Donna">
+			<div style='position:relative;'>
+				<a href="#" class="tip"><strong>Donna Noble</strong><span><p><strong><p>Nome: Donna Noble</p></strong>
+																			<strong><p>Endereço:</p></strong>
+																			<strong><p>Rua: Tarde Autonoma Rupestre</p></strong>
+																			<strong><p>Bairro: Dias Interminávies Silvestres</p></strong>
+																			<strong><p>Nº: 900</p></strong>
+																			<strong><p>Cidade: Cosmopolitana</p></strong>
+																			<strong><p>Estado: São Paulo</p></strong>
+																			<strong><p>País: Brasil</p></strong>
+																			</span></a>
+			</div>
+		 </li>
+		 <li id="River">
+			<div style='position:relative;'>
+				<a href="#" class="tip"><strong>River Song</strong><span><p><strong><p>Nome: River Song</p></strong>
+																			<strong><p>Endereço:</p></strong>
+																			<strong><p>Rua: Tarde Autonoma Rupestre</p></strong>
+																			<strong><p>Bairro: Dias Interminávies Silvestres</p></strong>
+																			<strong><p>Nº: 900</p></strong>
+																			<strong><p>Cidade: Cosmopolitana</p></strong>
+																			<strong><p>Estado: São Paulo</p></strong>
+																			<strong><p>País: Brasil</p></strong>
+																			</span></a>
+			</div>
+		 </li>
+		 <li id="Amy">
+			<div style='position:relative;'>
+				<a href="#" class="tip"><strong>Amy Pond</strong><span><p><strong><p>Nome: Amelia Pond</p></strong>
+																			<strong><p>Endereço:</p></strong>
+																			<strong><p>Rua: Tarde Autonoma Rupestre</p></strong>
+																			<strong><p>Bairro: Dias Interminávies Silvestres</p></strong>
+																			<strong><p>Nº: 900</p></strong>
+																			<strong><p>Cidade: Cosmopolitana</p></strong>
+																			<strong><p>Estado: São Paulo</p></strong>
+																			<strong><p>País: Brasil</p></strong>
+																			</span></a>
+			</div>
+			<ul>
+				<li id="Rory">
+					<div style='position:relative;'>
+						<a href="#" class="tip"><strong>Rory Williams</strong><span><p><strong><p>Nome: Rory Williams</p></strong>
+																					<strong><p>Endereço:</p></strong>
+																					<strong><p>Rua: Tarde Autonoma Rupestre</p></strong>
+																					<strong><p>Bairro: Dias Interminávies Silvestres</p></strong>
+																					<strong><p>Nº: 900</p></strong>
+																					<strong><p>Cidade: Cosmopolitana</p></strong>
+																					<strong><p>Estado: São Paulo</p></strong>
+																					<strong><p>País: Brasil</p></strong>
+																					</span></a>
+					</div>
+				 </li>
+			</ul>
+		 </li>
+		 <li id="Clara">
+			<div style='position:relative;'>
+				<a href="#" class="tip"><strong>Clara Oswald</strong>
+				<span><p><strong><p>Nome: Clara OSwald</p></strong>
+				<strong><p>Endereço:</p></strong>
+				<strong><p>Rua: Tarde Autonoma Rupestre</p></strong>
+				<strong><p>Bairro: Dias Interminávies Silvestres</p></strong>
+				<strong><p>Nº: 900</p></strong>
+				<strong><p>Cidade: Cosmopolitana</p></strong>
+				<strong><p>Estado: São Paulo</p></strong>
+				<strong><p>País: Brasil</p></strong>
+				</span></a>
+			</div>
+			</li>
+		 </li>
+       </ul>
+     </li>
+   </ul>            
+	</div>    
+	<div id="geral">
+		<div id="chart" class="orgChart">
+		</div>
+	</div>
+    <script>
+        jQuery(document).ready(function() {
+            
+            /* Custom jQuery for the example */
+            $("#show-list").click(function(e){
+                e.preventDefault();
+                
+                $('#list-html').toggle('fast', function(){
+                    if($(this).is(':visible')){
+                        $('#show-list').text('Hide underlying list.');
+                        $(".topbar").fadeTo('fast',0.9);
+                    }else{
+                        $('#show-list').text('Show underlying list.');
+                        $(".topbar").fadeTo('fast',1);                  
+                    }
+                });
+            });
+            
+            $('#list-html').text($('#org').html());
+            
+            $("#org").bind("DOMSubtreeModified", function() {
+                $('#list-html').text('');
+                
+                $('#list-html').text($('#org').html());
+                
+                prettyPrint();                
+            });
+        });
+    </script>
+	</div>
+</body>
+</html>
